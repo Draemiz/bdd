@@ -25,4 +25,4 @@ values ('00018','Galletas','Galletas dulces rellenas',2.10,25);
 insert into productos(codigo, nombre, descripcion,precio,stock)
 values ('00019','Jugo','Jugo de naranja natural',1.50,35);
 
-select codigo, nombre, descripcion,precio,stock from productos;
+select codigo,nombre,precio from productos;
