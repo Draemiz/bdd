@@ -26,4 +26,15 @@ values (4,'FIFA 24','Simulador de fútbol con equipos reales',8);
 insert into videojuegos(codigo, nombre, descripcion, valoracion)
 values (5,'Call of Duty','Juego de disparos en primera persona',9);
 
+--solo obligatorios
+
+insert into videojuegos(codigo, nombre, descripcion, valoracion)
+values (6,'Fortnite','Juego battle royale multijugador',8);
+
+insert into videojuegos(codigo, nombre, descripcion, valoracion)
+values (7,'Zelda Breath of the Wild','Aventura de exploración en mundo abierto',10);
+
+insert into videojuegos(codigo, nombre, descripcion, valoracion)
+values (8,'Grand Theft Auto V','Juego de acción en mundo abierto',9);
+
 select codigo, nombre, descripcion, valoracion from videojuegos;
