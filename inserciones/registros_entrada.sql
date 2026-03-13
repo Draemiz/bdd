@@ -39,4 +39,11 @@ values (9,'1719988776','09/06/2024','08:07');
 insert into registros_entrada(codigo_registro, cedula_empleado, fecha, hora)
 values (10,'1781112233','10/06/2024','08:03');
 
-select codigo_registro, cedula_empleado, fecha, hora from registros_entrada;
+select cedula_empleado, fecha, hora 
+from registros_entrada;
+
+select * from registros_entrada
+where hora between '07:00' and '14:00';
+
+select * from registros_entrada
+where hora > '08:00';

@@ -41,4 +41,11 @@ values (9,'00009',1200.00,'C','09/06/2024','16:40');
 insert into transacciones(codigo, numero_cuenta, monto, tipo, fecha, hora)
 values (10,'00010',95.90,'D','10/06/2024','17:55');
 
-select codigo, numero_cuenta, monto, tipo, fecha, hora from transacciones;
+select * from transacciones
+where tipo = 'D';
+
+select * from transacciones
+where monto between 200::money and 2000::money;
+
+select codigo, monto, tipo, fecha from transacciones
+where fecha is not null;
