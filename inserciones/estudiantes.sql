@@ -63,3 +63,7 @@ where cedula like '17%';
 
 select nombre, apellido from estudiantes
 where nombre like 'a%';
+
+select * from estudiantes;
+update estudiantes set apellido = 'Hernandez'
+where cedula like '17%'

@@ -13,31 +13,31 @@ insert into registros_entrada(codigo_registro, cedula_empleado, fecha, hora)
 values (1,'1714616123','01/06/2024','08:00');
 
 insert into registros_entrada(codigo_registro, cedula_empleado, fecha, hora)
-values (2,'1785326581','02/06/2024','08:05');
+values (2,'1785326581','02/09/2024','08:05');
 
 insert into registros_entrada(codigo_registro, cedula_empleado, fecha, hora)
-values (3,'0923456789','03/06/2024','07:55');
+values (3,'0923456789','03/08/2024','07:55');
 
 insert into registros_entrada(codigo_registro, cedula_empleado, fecha, hora)
-values (4,'1102567894','04/06/2024','08:10');
+values (4,'1102567894','04/11/2024','08:10');
 
 insert into registros_entrada(codigo_registro, cedula_empleado, fecha, hora)
 values (5,'1712345678','05/06/2024','08:02');
 
 insert into registros_entrada(codigo_registro, cedula_empleado, fecha, hora)
-values (6,'0956781234','06/06/2024','07:59');
+values (6,'0956781234','06/02/2024','07:59');
 
 insert into registros_entrada(codigo_registro, cedula_empleado, fecha, hora)
-values (7,'1723456789','07/06/2024','08:15');
+values (7,'1723456789','07/08/2024','08:15');
 
 insert into registros_entrada(codigo_registro, cedula_empleado, fecha, hora)
-values (8,'0965432187','08/06/2024','08:00');
+values (8,'0965432187','08/04/2024','08:00');
 
 insert into registros_entrada(codigo_registro, cedula_empleado, fecha, hora)
-values (9,'1719988776','09/06/2024','08:07');
+values (9,'1719988776','09/05/2024','08:07');
 
 insert into registros_entrada(codigo_registro, cedula_empleado, fecha, hora)
-values (10,'1781112233','10/06/2024','08:03');
+values (10,'1781112233','10/01/2024','08:03');
 
 select cedula_empleado, fecha, hora 
 from registros_entrada;
@@ -47,3 +47,7 @@ where hora between '07:00' and '14:00';
 
 select * from registros_entrada
 where hora > '08:00';
+
+select * from registros_entrada;
+update registros_entrada set cedula_empleado = '082345679'
+where fecha between '2024-08-01' and '2024-08-31';

@@ -6,15 +6,15 @@ create table productos(
     nombre varchar(50) not null,
     descripcion varchar(200),
     precio money not null,
-	stock int not null,
+	stock int,
     constraint productos_pk primary key(codigo)
 );
 
-insert into productos(codigo, nombre, descripcion,precio,stock)
-values ('00015','Cereal','Cereal de chocolate para niños',3.60,30);
+insert into productos(codigo, nombre, descripcion,precio)
+values ('00015','Cereal','Cereal de chocolate para niños',3.60);
 
-insert into productos(codigo, nombre,precio,stock)
-values ('00016','Leche',1.20,50);
+insert into productos(codigo, nombre,precio)
+values ('00016','Leche',1.20);
 
 insert into productos(codigo, nombre, descripcion,precio,stock)
 values ('00017','Pan','Pan blanco sin bordes',0.80,40);
@@ -36,3 +36,8 @@ where descripcion is null;
 
 select * from productos
 where precio between 2::money and 3::money;
+
+select * from productos
+
+update productos set stock = 0.0
+where stock is null
