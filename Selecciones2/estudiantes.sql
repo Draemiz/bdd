@@ -32,7 +32,7 @@ insert into estudiantes(cedula,nombre,apellido,email,fecha_nacimiento)
 values ('1734567890','carlos','gomez','carlosgomez@gmail.com','15/07/2000');
 
 insert into estudiantes(cedula,nombre,apellido,email,fecha_nacimiento)
-values ('0112345675','fernando','arias','fernandoarias@gmail.com','09/07/1996');
+values ('1812325675','fernando','arias','fernandoarias@gmail.com','09/07/1996');
 
 insert into estudiantes(cedula,nombre,apellido,email,fecha_nacimiento)
 values ('0612345678','diego','mora','diegomora@gmail.com','05/08/1998');
@@ -53,4 +53,13 @@ insert into estudiantes(cedula,nombre,apellido,email,fecha_nacimiento)
 values ('0934567895','andres','vargas','andresvargas@gmail.com','19/06/2001');
 
 insert into estudiantes(cedula,nombre,apellido,email,fecha_nacimiento)
-values ('1723456789','maria','lopez','marialopez@gmail.com','22/03/1999');
+values ('1723456706','maria','lopez','marialopez@gmail.com','22/03/1999');
+
+select nombre, apellido from estudiantes
+where nombre like 'm%' or apellido like '%z';
+
+select nombre from estudiantes
+where cedula like '18%' and cedula like '%32%';
+
+select nombre, apellido from estudiantes
+where cedula like '%06' or cedula like '17%';
