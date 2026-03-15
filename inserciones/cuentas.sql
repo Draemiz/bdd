@@ -25,7 +25,7 @@ insert into cuentas(numero_cuenta, cedula_propietario, saldo)
 values ('00005','11025',1500.00);
 
 insert into cuentas(numero_cuenta, cedula_propietario, fecha_creacion, saldo)
-values ('00006','11025','2024-02-01',250.75);
+values ('00006','10025','2024-02-01',250.75);
 
 insert into cuentas(numero_cuenta, cedula_propietario)
 values ('00007','09234');
@@ -45,3 +45,6 @@ where saldo is n;
 select * from cuentas;
 update cuentas set saldo = 10
 where cedula_propietario like '17%'
+
+delete from cuentas
+where cedula_propietario like '10%'

@@ -32,7 +32,7 @@ insert into estudiantes(cedula,nombre,apellido,email,fecha_nacimiento)
 values ('1734567890','carlos','gomez','carlosgomez@gmail.com','15/07/2000');
 
 insert into estudiantes(cedula,nombre,apellido,email,fecha_nacimiento)
-values ('0112345678','fernando','arias','fernandoarias@gmail.com','09/07/1996');
+values ('0112345675','fernando','arias','fernandoarias@gmail.com','09/07/1996');
 
 insert into estudiantes(cedula,nombre,apellido,email,fecha_nacimiento)
 values ('0612345678','diego','mora','diegomora@gmail.com','05/08/1998');
@@ -50,7 +50,7 @@ insert into estudiantes(cedula,nombre,apellido,email,fecha_nacimiento)
 values ('1112345678','miguel','salazar','miguelsalazar@gmail.com','16/05/1997');
 
 insert into estudiantes(cedula,nombre,apellido,email,fecha_nacimiento)
-values ('0934567890','andres','vargas','andresvargas@gmail.com','19/06/2001');
+values ('0934567895','andres','vargas','andresvargas@gmail.com','19/06/2001');
 
 insert into estudiantes(cedula,nombre,apellido,email,fecha_nacimiento)
 values ('1723456789','maria','lopez','marialopez@gmail.com','22/03/1999');
@@ -67,3 +67,6 @@ where nombre like 'a%';
 select * from estudiantes;
 update estudiantes set apellido = 'Hernandez'
 where cedula like '17%'
+
+delete from estudiantes
+where cedula like '%5';

@@ -12,7 +12,7 @@ create table videojuegos(
 --Todos los campos
 
 insert into videojuegos(codigo, nombre, descripcion, valoracion)
-values (1,'The Witcher 3','Juego de rol de mundo abierto basado en fantasía',10);
+values (1,'The Witcher 3','Juego de rol de mundo abierto basado en fantasía',6);
 
 insert into videojuegos(codigo, nombre, valoracion)
 values (2,'Minecraft',9);
@@ -21,7 +21,7 @@ insert into videojuegos(codigo, nombre, descripcion, valoracion)
 values (3,'God of War','Aventura de acción basada en mitología nórdica',10);
 
 insert into videojuegos(codigo, nombre, valoracion)
-values (4,'FIFA 24',8);
+values (4,'FIFA 24',5);
 
 insert into videojuegos(codigo, nombre, descripcion, valoracion)
 values (5,'Call of Duty','Juego de disparos en primera persona',9);
@@ -48,3 +48,6 @@ where descripcion is null;
 
 update videojuegos set descripcion = 'Mejor puntuado'
 where valoracion > 9;
+
+delete from videojuegos
+where valoracion <7;
