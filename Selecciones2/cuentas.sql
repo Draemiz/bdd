@@ -34,7 +34,17 @@ insert into cuentas(numero_cuenta, cedula_propietario, fecha_creacion)
 values ('00008','09234','2022-12-20');
 
 insert into cuentas(numero_cuenta, cedula_propietario, saldo)
-values ('00009','17146',2000.00);
+values ('00009','17142',0.0);
 
 insert into cuentas(numero_cuenta, cedula_propietario, fecha_creacion, saldo)
 values ('00010','17853','2024-05-30',900.40);
+
+
+select numero_cuenta, saldo from cuentas
+where saldo > 100::money and saldo < 1000::money;
+
+select * from cuentas
+where fecha_creacion between '01/06/2023' and '01/06/2024';
+
+select * from cuentas
+where saldo = 0::money or cedula_propietario like '%2';
